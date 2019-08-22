@@ -8,7 +8,7 @@ let counter = 0;
 
 const DBconnect = function(){
     if(counter > 0) console.log(`\nReconnecting on the (${counter}) time.`);
-    mongoose.connect("mongodb+srv://magsipoc.david@gmail.com:Mongo2019@cluster0-d8kwu.mongodb.net/test?retryWrites=true&w=majority", {
+    mongoose.connect("mongodb+srv://dbUser:mongodb123@cluster0-d8kwu.mongodb.net/test?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     keepAlive: true
 })
